@@ -1,0 +1,39 @@
+@keyframes go-back {
+    0%{
+        transform: translateX(90px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.title-anime{
+    animation: go-back 5s infinite alternate;
+}
+
+@keyframes rotate-sub {
+    0%{
+        transform: rotateY(100deg);
+    }
+}
+
+.sub-rotate{
+    animation: rotate-sub 5s infinite alternate;
+}
+
+.title-format{
+    font-size: 250px;
+}
+
+@media screen and (min-width: 601px) {
+    div.example{ 
+        font-size: 150px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.example{
+        font-size: 400px;
+    }
+}
+
